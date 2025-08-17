@@ -1,0 +1,423 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "com.archie.config.ApplicationProperties",
+      "sourceType": "com.archie.config.ApplicationProperties"
+    },
+    {
+      "name": "partner.datasource",
+      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "sourceType": "com.archie.config.PartnerDbConfig",
+      "sourceMethod": "SyncDataSourceProperties()"
+    },
+    {
+      "name": "partner.datasource.hikari",
+      "type": "com.zaxxer.hikari.HikariDataSource",
+      "sourceType": "com.archie.config.PartnerDbConfig",
+      "sourceMethod": "partnerDataSource()"
+    },
+    {
+      "name": "partner.datasource.xa",
+      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "sourceMethod": "getXa()"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "sourceType": "com.archie.config.DatabaseConfiguration",
+      "sourceMethod": "defaultDataSourceProperties()"
+    },
+    {
+      "name": "spring.datasource.hikari",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.archie.config.DatabaseConfiguration",
+      "sourceMethod": "defaultDataSource()"
+    },
+    {
+      "name": "spring.datasource.xa",
+      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "sourceMethod": "getXa()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "partner.datasource.continue-on-error",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.data",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.data-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.data-username",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.generate-unique-name",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.hikari.allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.connection-test-query",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.data-source-j-n-d-i",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.exception-override-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.health-check-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.health-check-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.idle-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.initialization-fail-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.jdbc-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.login-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.max-lifetime",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.metric-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.metrics-tracker-factory",
+      "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.pool-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.scheduled-executor",
+      "type": "java.util.concurrent.ScheduledExecutorService",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.transaction-isolation",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.username",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.hikari.validation-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "partner.datasource.initialization-mode",
+      "type": "org.springframework.boot.jdbc.DataSourceInitializationMode",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.jndi-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.platform",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.schema",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.schema-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.schema-username",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.separator",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.sql-script-encoding",
+      "type": "java.nio.charset.Charset",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.type",
+      "type": "java.lang.Class<? extends javax.sql.DataSource>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "partner.datasource.xa.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
+    },
+    {
+      "name": "partner.datasource.xa.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
+    },
+    {
+      "name": "spring.datasource.continue-on-error",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.data",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.data-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.data-username",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.generate-unique-name",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.initialization-mode",
+      "type": "org.springframework.boot.jdbc.DataSourceInitializationMode",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.jndi-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.platform",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.schema",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.schema-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.schema-username",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.separator",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.sql-script-encoding",
+      "type": "java.nio.charset.Charset",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.type",
+      "type": "java.lang.Class<? extends javax.sql.DataSource>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.xa.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
+    },
+    {
+      "name": "spring.datasource.xa.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,40 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "opentime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "endtime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "result",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resultAmount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "twin",
+      "fieldType": "Long"
+    }
+  ],
+  "changelogDate": "20200916113155",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "taixiu",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}

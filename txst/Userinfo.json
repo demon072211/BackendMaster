@@ -1,0 +1,36 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "loginname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pwd",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "usertype",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fatherid",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20200929060614",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "userinfo",
+  "databaseType": "sql",
+  "readOnly": true,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}

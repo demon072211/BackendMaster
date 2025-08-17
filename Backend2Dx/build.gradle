@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'backend'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':CardCoreLib')
+    compile project(':BitzeroAll')
+    compile fileTree(include: ['*.jar'], dir: '../../java-libs')
+}
+
+task copyJar(type: Copy) {
+    from configurations.compile {
+        include 'VbeeCommon*.jar',  "CardCoreLib*.jar", "VinPlayUserCore*.jar", "VinPlayDAL*.jar", "BitzeroAll*.jar"
+    }
+    into 'libs/'
+}
+
+build.dependsOn copyJar

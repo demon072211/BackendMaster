@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.archie",
+      "nativeLanguage": "vi"
+    },
+    "jhipsterVersion": "6.10.4",
+    "applicationType": "monolith",
+    "baseName": "txcb",
+    "packageName": "com.archie",
+    "packageFolder": "com/archie",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "oracle",
+    "prodDatabaseType": "oracle",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDFmMzFiOWFjZmEzMGNkNzRlZTc0MDA2Nzc1ZTNmNDFjMjBjMDI5ZjdlMzA1MDZkY2RiMDAxMDQ1MDUzNGNhYzU2NGYyN2E0YjE2MzQ5OTU3ZTIxZjcyM2MyZjk3MWExZGEzN2QyNjczZDQ3MmM0ZWFkYzYxZGJmOWFkMTQ1Y2Y=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1603116549933,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "vi",
+    "languages": ["vi", "en"],
+    "blueprints": [],
+    "skipClient": true,
+    "lastLiquibaseTimestamp": 1604044813000
+  }
+}

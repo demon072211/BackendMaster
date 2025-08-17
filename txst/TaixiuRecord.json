@@ -1,0 +1,64 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "taixiuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "loginname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "betamount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "winamount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "typed",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bettime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "result",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "refundamount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userType",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20200917062535",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "taixiu_record",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}
